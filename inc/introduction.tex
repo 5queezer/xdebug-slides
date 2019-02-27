@@ -1,0 +1,42 @@
+\begin{frame}\frametitle{Why use Xdebug}
+    \begin{exampleblock}{Common Approach}
+        \lstinputlisting[language=php, caption={Manual Debugging}]{code/var_dump_examples.php}
+    \end{exampleblock}
+    \pause
+    \begin{alertblock}{Remove that again}
+        don't commit these lines into VCS
+    \end{alertblock}
+\end{frame}
+
+\begin{frame}\frametitle{Traditional Way}
+    \begin{enumerate}
+        \item insert outputs 
+        \item reload page
+        \item look for output 
+        \item change some code \pause
+        \item repeat 1. until error is fixed \pause
+        \item clean up outputs
+        \item load final version of the page
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}\frametitle{Xdebug Way}
+    \begin{enumerate}
+        \item add breakpoints \pause
+        \item reload page \pause
+        \item step into the code
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}\frametitle{Advantages}
+    \begin{itemize}
+        \item Faster development time
+        \item Better understanding of what the code is doing
+        \item Does not require code changes
+    \end{itemize}
+\end{frame}
+ 
+\begin{frame}\frametitle{How it works}
+    \transduration<0-5>{0}
+    \multiinclude[<+->][format=png, graphics={width=\textwidth}]{dbgp-setup2}
+\end{frame}

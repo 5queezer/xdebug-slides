@@ -1,0 +1,29 @@
+\begin{frame}\frametitle{Profiler}
+    \begin{block}{What does it do?}
+    Xdebugs Profiler is a powerful tool that gives you the ability 
+    to analyze your PHP code and determine bottlenecks or generally 
+    see which parts of your code are slow and could use a speed boost.
+    \end{block} \pause
+    \begin{itemize}
+        \item Output Files: cachegrind.out \pause
+        \item Analysis Tools 
+            \begin{itemize} 
+            \item KCacheGrind (Linux)
+            \item QCacheGrind (Linux, Mac)
+            \item WinCacheGrind (Windows)
+            \item Webgrind (web-based)
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Configuration}
+    \lstinputlisting[caption={Enable Profiler}]{code/xdebug-profiler.ini}
+%     \begin{itemize}
+%         \item[linux] \href{http://kcachegrind.sourceforge.net/}{KXachegrind}
+%     \end{itemize}
+    or
+    \begin{itemize}
+        \item Set HTTP GET/POST variable XDEBUG\_PROFILE
+        \item Set a Cookie in the header XDEBUG\_PROFILE
+    \end{itemize}
+\end{frame}

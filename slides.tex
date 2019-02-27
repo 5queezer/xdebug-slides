@@ -1,0 +1,51 @@
+\documentclass{beamer}
+\usetheme{Berlin}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{xmpmulti}
+\usepackage{qrcode}
+\graphicspath{ {./img/} }
+\setlength{\parskip}{1em}
+ 
+%Information to be included in the title page:
+\title{Debug PHP with Xdebug}
+\subtitle{with examples for Vagrant with Debian / Ubuntu}
+\author{Christian Pojoni}
+\institute{\url{www.secret-source.eu}}
+\date{Mar 2019}
+
+\begin{document}
+
+\frame{\titlepage}
+\begin{frame}\frametitle{Contents}
+    \tableofcontents
+\end{frame}
+
+\section{Introduction}
+\input{inc/Introduction.tex}
+
+\section{Installation} 
+\subsection{Client}
+\input{inc/client.tex}
+
+\subsection{Server}
+\input{inc/server.tex}
+
+\section{Profiler}
+\input{inc/profiler.tex}
+
+\section{Tracer}
+\input{inc/tracer.tex}
+
+\section{Xdebug PHP functions}
+\input{inc/php.tex}
+
+\section{References}
+\input{inc/outro.tex}
+
+\end{document}
+

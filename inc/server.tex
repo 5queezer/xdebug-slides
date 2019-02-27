@@ -1,0 +1,22 @@
+\begin{frame}\frametitle{Installation on Debian with PHP-FPM and Nginx}
+    \begin{enumerate}
+        \item \texttt{apt-get install php-xdebug} \pause
+        \item \texttt{phpenmod xdebug} \pause
+        \item \texttt{systemctl restart php\underline{7.3}-fpm} \pause
+    \end{enumerate}
+    \begin{block}{Check your Target}
+        Install on your target machine, e.g. Vagrant or Docker container. Check the installation with \texttt{php -i | grep xdebug}.
+    \end{block}
+    \pause
+    \begin{alertblock}{Common Pitfall}
+        Check your PHP version with \texttt{php -v} or with \texttt{<?php phpinfo();}
+    \end{alertblock}
+\end{frame}
+
+\begin{frame}\frametitle{PHP settings}
+    \lstinputlisting[caption={Remote Debugging}]{code/xdebug-debug.ini}
+    \begin{exampleblock}{/etc/php/7.3/mods-available/xdebug.ini}
+        These values are already present in Debian / Ubuntu. No need to edit! Make sure you enabled the plugin with \texttt{phpenmod}.
+    \end{exampleblock}
+\end{frame}
+
