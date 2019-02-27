@@ -13,13 +13,15 @@
             \item WinCacheGrind (Windows)
             \item Webgrind (web-based)
             \end{itemize}
-    \end{itemize}
+    \end{itemize} \pause
+    Alternatives: XHprof and \underline{Blackfire}
 \end{frame}
 
 \subsection{Configuration}
 \begin{frame}\frametitle{Configuration}
-    % \lstinputlisting[caption={Enable Profiler}]{code/xdebug-profiler.ini}
-    \texttt{systemctl restart php\underline{7.3}-fpm}
+    \lstinputlisting[caption={Enable Profiler}]{code/xdebug-profiler.ini}
+    \texttt{systemctl restart php\underline{7.3}-fpm} \pause
+    
     or
     \begin{itemize}
         \item Set HTTP GET/POST variable XDEBUG\_PROFILE
