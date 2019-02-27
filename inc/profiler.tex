@@ -16,11 +16,10 @@
     \end{itemize}
 \end{frame}
 
+\subsection{Configuration}
 \begin{frame}\frametitle{Configuration}
-    \lstinputlisting[caption={Enable Profiler}]{code/xdebug-profiler.ini}
-%     \begin{itemize}
-%         \item[linux] \href{http://kcachegrind.sourceforge.net/}{KXachegrind}
-%     \end{itemize}
+    % \lstinputlisting[caption={Enable Profiler}]{code/xdebug-profiler.ini}
+    \texttt{systemctl restart php\underline{7.3}-fpm}
     or
     \begin{itemize}
         \item Set HTTP GET/POST variable XDEBUG\_PROFILE

@@ -1,14 +1,17 @@
-\documentclass{beamer}
+\documentclass[
+    hyperref={bookmarks=true}
+]{beamer}
 \usetheme{Berlin}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[english]{babel}
 \usepackage{listings}
-\usepackage{hyperref}
 \usepackage{graphicx}
+\graphicspath{ {./img/} }
+
 \usepackage{xmpmulti}
 \usepackage{qrcode}
-\graphicspath{ {./img/} }
+
 \setlength{\parskip}{1em}
  
 %Information to be included in the title page:
@@ -41,7 +44,7 @@
 \section{Tracer}
 \input{inc/tracer.tex}
 
-\section{Xdebug PHP functions}
+\section{PHP functions}
 \input{inc/php.tex}
 
 \section{References}
