@@ -1,11 +1,11 @@
-\begin{frame}\frametitle{Installation on Debian with PHP-FPM and Nginx}
+\begin{frame}\frametitle{Installation on Ubuntu with PHP-FPM and Nginx}
     \begin{enumerate}
         \item \texttt{apt-get install php-xdebug} \pause
         \item \texttt{phpenmod xdebug} \pause
         \item \texttt{systemctl restart php\underline{7.3}-fpm} \pause
     \end{enumerate}
     \begin{block}{Check your Target}
-        Install on your target machine, e.g. Vagrant or Docker container. Check the installation with \texttt{php -i | grep xdebug}.
+        Install on your target machine, e.g. Vagrant or Docker container. Check the installation with \texttt{php -m | grep xdebug}.
     \end{block}
     \pause
     \begin{alertblock}{Common Pitfall}
@@ -13,10 +13,10 @@
     \end{alertblock}
 \end{frame}
 
-\begin{frame}\frametitle{PHP settings}
-    \lstinputlisting[caption={Remote Debugging}]{code/xdebug-debug.ini}
+\begin{frame}\frametitle{PHP settings / Remote Debugging}
+    \lstinputlisting{code/xdebug-debug.ini}
     \begin{block}{/etc/php/7.3/mods-available/xdebug.ini}
-        These values are already present in Debian / Ubuntu. No need to edit! Make sure you enabled the plugin with \texttt{phpenmod}.
+        These values are already present in Ubuntu. No need to edit! Make sure you enabled the plugin with \texttt{phpenmod}.
     \end{block} \pause
     \begin{exampleblock}{Tailored Installation Instructions for install from source}
         \href{https://xdebug.org/wizard.php}{https://xdebug.org/wizard.php}
