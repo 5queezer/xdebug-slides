@@ -37,7 +37,8 @@
 \end{frame}
  
 \begin{frame}\frametitle{How it works}
-    \foreach \x [count=\xi] in {0,...,5} {
-        \includegraphics<\xi>[width=0.95\textwidth]{dbgp-setup2-\x.png}
+    \centering
+    \foreach \x in {0,...,5} {%
+        \includegraphics<+>[width=0.95\textwidth]{dbgp-setup2-\x.png}%
     }
 \end{frame}
